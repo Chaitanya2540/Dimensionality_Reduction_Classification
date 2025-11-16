@@ -105,7 +105,7 @@ The script generates:
 
 ## Customization
 
-You can modify the main script to:
+Main script can be modified to:
 - Change the dataset (set `dataset_name='synthetic'` for synthetic data)
 - Adjust the number of samples (`n_samples` parameter)
 - Modify the dimensions to test
@@ -124,24 +124,4 @@ The generated plots show:
 - How classification accuracy changes with dimensionality
 - Comparison between PCA and LDA
 - Performance of different classifiers at various dimensions
-
-## Report Writing Tips
-
-When writing your report, consider:
-1. **Introduction**: Explain the problem and motivation
-2. **Methodology**: Describe PCA, LDA, and the classifiers used
-3. **Experimental Setup**: Dataset details, train/test split, parameters
-4. **Results**: Present the accuracy vs dimensionality plots
-5. **Analysis**: 
-   - Compare PCA vs LDA performance
-   - Analyze which classifier works best at different dimensions
-   - Discuss optimal dimensionality for each method
-   - Explain why certain dimensions perform better
-6. **Conclusion**: Summarize findings and insights
-
-## Notes
-
-- The code follows best practices: training parameters are learned only from training data
-- Test data is never used for model fitting or parameter selection
-- All random operations use fixed seeds for reproducibility
 
